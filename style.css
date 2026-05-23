@@ -1,0 +1,36 @@
+
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+
+:root {
+    --bs-primary: #0f62fe;
+    --bs-primary-rgb: 15, 98, 254;
+}
+
+
+.hover-lift {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+}
+
+/* Migliora l'aspetto dei link della Navbar attiva */
+.navbar-nav .nav-link.active {
+    color: var(--bs-primary) !important;
+    border-bottom: 2px solid var(--bs-primary);
+}
+
+.navbar-nav .nav-link {
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.navbar-nav .nav-link:hover {
+    border-bottom: 2px solid #dee2e6;
+}
